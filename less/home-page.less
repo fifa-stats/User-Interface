@@ -165,7 +165,7 @@
                 
                 .bold {
                 font-weight: bold;
-                }
+            }
 
             }
 
@@ -174,7 +174,7 @@
                 font-size: 2.8rem;
             }
 
-            .cta-btn{
+            .cta-btn {
             background-color: @main-color;
             color:@accent-color ;
             margin-top: 1rem;
@@ -192,7 +192,33 @@
                 color: @main-color;
                 font-weight: bold;
                 border: 1px solid white;
+                cursor: pointer;
             }
+        }
+
+        footer{
+            width: 30%;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 30rem;
+
+            .footer-content{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                // background-color: @accent-color;
+                // border-top: 1px solid @main-color;
+                // border-left: 1px solid @main-color;
+                // border-bottom: 1px solid @main-color;
+
+                .footer-link{
+                    width: 30%;
+                   color: @main-color;
+                   text-align: center;
+                   border-right: 1px solid @main-color;
+                }
+            }
+
         }
     }
 

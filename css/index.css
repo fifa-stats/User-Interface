@@ -432,6 +432,24 @@ nav span {
   color: #162b32;
   font-weight: bold;
   border: 1px solid white;
+  cursor: pointer;
+}
+.main-content-container footer {
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30rem;
+}
+.main-content-container footer .footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-container footer .footer-content .footer-link {
+  width: 30%;
+  color: #162b32;
+  text-align: center;
+  border-right: 1px solid #162b32;
 }
 .intro:before {
   left: 3rem;
