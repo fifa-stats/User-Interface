@@ -9,68 +9,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-    nav{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 2rem;
-        margin-right: 2rem;
-        align-items: center;
-
-        .dropdown{
-            cursor: pointer;
-            position: relative;
-            margin-bottom: 2rem;
-            // display: inline-block;
-        
-
-            .dropdown-content{
-                display: none;
-                background-color: white;
-                z-index: 1;
-                position: absolute;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                
-                min-width: 15rem;
-                a{
-                    font-size: 3rem;
-                    text-decoration: none;
-                    color: @main-color;
-                    padding: 12px 17px;
-                    display: block;
-                    background-color: @accent-color;
-                    border-bottom: 1px solid @main-color;
-                }
-
-                a:hover{
-                    color: @accent-color;
-                    background-color: @main-color;
-                }
-            }
-        }
-
-        .dropdown:hover .dropdown-content{
-            display: block;
-        }
-
-        // .dropdown-content:hover .dropdown-content{
-        //     display: block;
-        // }
-
-        .fa-arrow-down{
-            font-size: 1.8rem;
-            margin-right: 0.5rem;
-            color: @main-color;
-        }
-
-        span {
-            font-size: 2.8rem;
-            color: @main-color;
-        }
-    }
+    justify-content: center;
+    align-items: center;
 
     .cta-container{
-        margin: 5% auto;
         background: rgba(53, 57, 58, 0.81);
         display: flex;
         flex-direction: column;
@@ -79,7 +21,6 @@
         height: 41rem;
         padding: 2rem;
         padding-bottom: 0;
-        border-radius: 1rem;
 
         h1{
             font-size: 4.8rem;
@@ -98,7 +39,6 @@
 
         .cta-btn{
             align-self: center;
-            border-radius: .5rem;
             background-color: #c2c7cd;
             color: @main-color;
             margin-top: 1rem;
@@ -115,5 +55,67 @@
             color: @accent-color;
             box-shadow: 0px .2rem 1.6rem .7rem
         }
+    }
+}
+
+nav{
+    position: fixed;
+    right: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    padding-bottom: 2rem;
+    .dropdown{
+        cursor: pointer;
+        position: relative;
+        // margin-bottom: 2rem;
+        // display: inline-block;
+    
+
+        .dropdown-content{
+            display: none;
+            background-color: white;
+            z-index: 1;
+            position: absolute;
+            top: 4rem;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 15rem;
+            a{
+                font-size: 3rem;
+                text-decoration: none;
+                color: @main-color;
+                padding: 12px 17px;
+                display: block;
+                background-color: @accent-color;
+                border-bottom: 1px solid @main-color;
+            }
+
+            a:hover{
+                color: @accent-color;
+                background-color: @main-color;
+            }
+        }
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+    .dropdown-content:hover .dropdown-content{
+        display: block;
+    }
+
+    .fa-arrow-down{
+        font-size: 1.8rem;
+        margin-right: 0.5rem;
+        color: @main-color;
+    }
+
+    span {
+        font-size: 2.8rem;
+        color: @main-color;
     }
 }
