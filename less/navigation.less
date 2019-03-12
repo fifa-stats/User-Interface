@@ -20,17 +20,18 @@
         .dropdown{
             cursor: pointer;
             position: relative;
+            margin-bottom: 2rem;
             // display: inline-block;
         
 
             .dropdown-content{
-                /* padding: 12px 16px; */
                 display: none;
                 background-color: white;
                 z-index: 1;
+                position: absolute;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                margin-top: 1rem;
-
+                
+                min-width: 15rem;
                 a{
                     font-size: 3rem;
                     text-decoration: none;
@@ -51,6 +52,10 @@
         .dropdown:hover .dropdown-content{
             display: block;
         }
+
+        // .dropdown-content:hover .dropdown-content{
+        //     display: block;
+        // }
 
         .fa-arrow-down{
             font-size: 1.8rem;
@@ -94,14 +99,21 @@
         .cta-btn{
             align-self: center;
             border-radius: .5rem;
-            background-color: @main-color;
-            color: @accent-color;
+            background-color: #c2c7cd;
+            color: @main-color;
             margin-top: 1rem;
             padding: 1rem 3rem;
             border: none;
             font-size: 3rem;
             font-weight: bold;
             cursor: pointer;
+            box-shadow: 0px .2rem 1.6rem .7rem
+        }
+
+        .cta-btn:hover{
+            background-color: @main-color;
+            color: @accent-color;
+            box-shadow: 0px .2rem 1.6rem .7rem
         }
     }
 }

@@ -183,14 +183,15 @@ a {
 .header-container nav .dropdown {
   cursor: pointer;
   position: relative;
+  margin-bottom: 2rem;
 }
 .header-container nav .dropdown .dropdown-content {
-  /* padding: 12px 16px; */
   display: none;
   background-color: white;
   z-index: 1;
+  position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  margin-top: 1rem;
+  min-width: 15rem;
 }
 .header-container nav .dropdown .dropdown-content a {
   font-size: 3rem;
@@ -245,14 +246,20 @@ a {
 .header-container .cta-container .cta-btn {
   align-self: center;
   border-radius: 0.5rem;
-  background-color: #162b32;
-  color: #c2c7cd;
+  background-color: #c2c7cd;
+  color: #162b32;
   margin-top: 1rem;
   padding: 1rem 3rem;
   border: none;
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
+}
+.header-container .cta-container .cta-btn:hover {
+  background-color: #162b32;
+  color: #c2c7cd;
+  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
 }
 .main-content-container .intro {
   margin-bottom: 5rem;
