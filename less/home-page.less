@@ -157,13 +157,41 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-bottom: 10rem;
 
             h2{
                 color: @accent-color;
+                margin-bottom: 1rem;
+                
+                .bold {
+                font-weight: bold;
+                }
+
             }
 
             p{
                 color: @accent-color;
+                font-size: 2.8rem;
+            }
+
+            .cta-btn{
+            background-color: @main-color;
+            color:@accent-color ;
+            margin-top: 1rem;
+            padding: 1rem 3rem;
+            border: none;
+            font-size: 3rem;
+            font-weight: bold;
+            cursor: pointer;
+            }
+
+            .about-us-btn{
+                padding: 1rem 3rem;
+                font-size: 3rem;
+                background-color: transparent;
+                color: @main-color;
+                font-weight: bold;
+                border: 1px solid white;
             }
         }
     }

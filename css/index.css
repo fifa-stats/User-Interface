@@ -157,6 +157,9 @@ a {
   font-size: 3rem;
   text-decoration: none;
 }
+strong {
+  font-weight: bold;
+}
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -399,12 +402,36 @@ nav span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 .main-content-container .bottom-content h2 {
   color: #c2c7cd;
+  margin-bottom: 1rem;
+}
+.main-content-container .bottom-content h2 .bold {
+  font-weight: bold;
 }
 .main-content-container .bottom-content p {
   color: #c2c7cd;
+  font-size: 2.8rem;
+}
+.main-content-container .bottom-content .cta-btn {
+  background-color: #162b32;
+  color: #c2c7cd;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main-content-container .bottom-content .about-us-btn {
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  background-color: transparent;
+  color: #162b32;
+  font-weight: bold;
+  border: 1px solid white;
 }
 .intro:before {
   left: 3rem;
