@@ -143,11 +143,8 @@ h4,
 h5 {
   font-family: 'Oswald';
 }
-h1 {
-  font-size: 3.6rem;
-}
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -161,14 +158,14 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .header-container {
   background-image: url(../img/header-img.jpeg);
-  max-width: 130rem;
+  max-width: 100%;
   /* height: 1000px; */
-  height: 70rem;
+  height: 90rem;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -205,12 +202,14 @@ a {
   font-size: 4.8rem;
   text-align: center;
   color: #c2c7cd;
+  line-height: 5.5rem;
 }
 .header-container .cta-container p {
   font-size: 3.8rem;
   text-align: center;
   margin-top: 1rem;
   color: #c2c7cd;
+  line-height: 5rem;
 }
 .header-container .cta-container .cta-btn {
   align-self: center;
@@ -222,4 +221,60 @@ a {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+}
+.main-content-container {
+  border-top: 1px solid #162b32;
+}
+.main-content-container .intro {
+  margin-bottom: 5rem;
+  padding-top: 7rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.main-content-container .intro .fa-futbol {
+  color: #162b32;
+  left: 0;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+.main-content-container .intro h2 {
+  color: #162b32;
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+.main-content-container .intro p {
+  color: #162b32;
+  width: 50%;
+  font-size: 3.2rem;
+  margin-top: 1rem;
+}
+.main-content-container .intro img {
+  width: 50%;
+  margin-top: 2rem;
+}
+.intro:before {
+  left: 3rem;
+  border-bottom: 1.5px solid #162b32;
+  border-top: 1.5px solid #162b32;
+  content: '';
+  height: 1rem;
+  position: absolute;
+  top: 2.75rem;
+  width: 40%;
+}
+.intro:after {
+  right: 3rem;
+  border-bottom: 1.5px solid #162b32;
+  border-top: 1.5px solid #162b32;
+  content: '';
+  height: 1rem;
+  position: absolute;
+  top: 2.75rem;
+  width: 40%;
 }

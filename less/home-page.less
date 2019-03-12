@@ -1,0 +1,68 @@
+.main-content-container{
+
+    border-top: 1px solid @main-color;
+
+    .intro{
+        margin-bottom: 5rem;
+        padding-top: 7rem;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+
+        .fa-futbol{
+            color: @main-color;
+            
+            left: 0;
+            position: absolute;
+            // text-align: center;
+            top: 1rem;
+            width: 100%;
+        }
+
+        h2{
+            color: @main-color;
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
+
+        p{
+            color: @main-color;
+            width: 50%;
+            font-size: 3.2rem;
+            margin-top: 1rem;
+        }
+
+        img{
+            width: 50%;
+            margin-top: 2rem; 
+        }
+    }
+}
+
+.intro:before{
+    left: 3rem;
+    border-bottom: 1.5px solid @main-color;
+    border-top: 1.5px solid @main-color;
+    content: '';
+    height: 1rem;
+   
+    position: absolute;
+    top: 2.75rem;
+    width: 40%;
+}
+
+.intro:after{
+    right: 3rem;
+    border-bottom: 1.5px solid @main-color;
+    border-top: 1.5px solid @main-color;
+    content: '';
+    height: 1rem;
+    
+    position: absolute;
+    top: 2.75rem;
+    width: 40%;
+}
