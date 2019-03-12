@@ -1,7 +1,5 @@
 .main-content-container{
 
-    border-top: 1px solid @main-color;
-
     .intro{
         margin-bottom: 5rem;
         padding-top: 7rem;
@@ -16,11 +14,10 @@
         .fa-futbol{
             color: @main-color;
             
-            left: 0;
+            left: 49%;
             position: absolute;
             // text-align: center;
             top: 1rem;
-            width: 100%;
         }
 
         h2{
@@ -41,7 +38,54 @@
             margin-top: 2rem; 
         }
     }
-}
+
+    .directory{
+        padding-top: 7rem;
+        position: relative;
+        text-align: center;
+        margin-bottom: 5rem;
+
+        .fa-futbol{
+            color: @main-color;
+            left: 49%;
+            position: absolute;
+            // text-align: center;
+            top: 1rem;
+            }
+        }
+
+        h2{
+            color: @main-color;
+            margin-top: 3rem;
+        }
+
+        .directory-boxes{
+            display: flex;
+            flex-wrap: wrap;
+
+            .directory-content{
+                width: 49%;
+                text-align: center;
+                margin-top: 5rem;
+
+                h3 {
+                    margin-top: 3rem;   
+                }
+
+                p{
+                    width: 50%;
+                    margin: 0 auto;
+                    border-bottom: .1rem dashed @main-color;
+                    padding-bottom: 1.5rem;
+                }
+            }
+            img{
+                width: 50%;
+                height: 33.4rem;
+                cursor: pointer;
+            }
+        }
+    }
 
 .intro:before{
     left: 3rem;
@@ -61,7 +105,28 @@
     border-top: 1.5px solid @main-color;
     content: '';
     height: 1rem;
-    
+    position: absolute;
+    top: 2.75rem;
+    width: 40%;
+}
+
+.directory:before{
+    left: 3rem;
+    border-bottom: 1.5px solid @main-color;
+    border-top: 1.5px solid @main-color;
+    content: '';
+    height: 1rem;
+    position: absolute;
+    top: 2.75rem;
+    width: 40%;
+}
+
+.directory:after{
+    right: 3rem;
+    border-bottom: 1.5px solid @main-color;
+    border-top: 1.5px solid @main-color;
+    content: '';
+    height: 1rem;
     position: absolute;
     top: 2.75rem;
     width: 40%;

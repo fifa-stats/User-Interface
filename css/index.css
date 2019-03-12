@@ -147,10 +147,10 @@ h2 {
   font-size: 4rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   line-height: 1.4;
 }
 a {
@@ -197,6 +197,7 @@ a {
   height: 41rem;
   padding: 2rem;
   padding-bottom: 0;
+  border-radius: 1rem;
 }
 .header-container .cta-container h1 {
   font-size: 4.8rem;
@@ -213,6 +214,7 @@ a {
 }
 .header-container .cta-container .cta-btn {
   align-self: center;
+  border-radius: 0.5rem;
   background-color: #162b32;
   color: #c2c7cd;
   margin-top: 1rem;
@@ -221,9 +223,6 @@ a {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
-}
-.main-content-container {
-  border-top: 1px solid #162b32;
 }
 .main-content-container .intro {
   margin-bottom: 5rem;
@@ -238,10 +237,9 @@ a {
 }
 .main-content-container .intro .fa-futbol {
   color: #162b32;
-  left: 0;
+  left: 49%;
   position: absolute;
   top: 1rem;
-  width: 100%;
 }
 .main-content-container .intro h2 {
   color: #162b32;
@@ -258,6 +256,45 @@ a {
   width: 50%;
   margin-top: 2rem;
 }
+.main-content-container .directory {
+  padding-top: 7rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.main-content-container .directory .fa-futbol {
+  color: #162b32;
+  left: 49%;
+  position: absolute;
+  top: 1rem;
+}
+.main-content-container h2 {
+  color: #162b32;
+  margin-top: 3rem;
+}
+.main-content-container .directory-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content-container .directory-boxes .directory-content {
+  width: 49%;
+  text-align: center;
+  margin-top: 5rem;
+}
+.main-content-container .directory-boxes .directory-content h3 {
+  margin-top: 3rem;
+}
+.main-content-container .directory-boxes .directory-content p {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 0.1rem dashed #162b32;
+  padding-bottom: 1.5rem;
+}
+.main-content-container .directory-boxes img {
+  width: 50%;
+  height: 33.4rem;
+  cursor: pointer;
+}
 .intro:before {
   left: 3rem;
   border-bottom: 1.5px solid #162b32;
@@ -269,6 +306,26 @@ a {
   width: 40%;
 }
 .intro:after {
+  right: 3rem;
+  border-bottom: 1.5px solid #162b32;
+  border-top: 1.5px solid #162b32;
+  content: '';
+  height: 1rem;
+  position: absolute;
+  top: 2.75rem;
+  width: 40%;
+}
+.directory:before {
+  left: 3rem;
+  border-bottom: 1.5px solid #162b32;
+  border-top: 1.5px solid #162b32;
+  content: '';
+  height: 1rem;
+  position: absolute;
+  top: 2.75rem;
+  width: 40%;
+}
+.directory:after {
   right: 3rem;
   border-bottom: 1.5px solid #162b32;
   border-top: 1.5px solid #162b32;
