@@ -210,7 +210,7 @@ strong {
 @media (max-width: 650px) {
   .header-container .cta-container {
     width: 100%;
-    height: 60%;
+    height: 75%;
   }
 }
 .header-container .cta-container h1 {
@@ -382,6 +382,12 @@ nav span {
   font-size: 3.2rem;
   margin-top: 1rem;
 }
+@media (max-width: 650px) {
+  .main-content-container .intro p {
+    width: 100%;
+    text-align: center;
+  }
+}
 .main-content-container .intro img {
   width: 50%;
   margin-top: 2rem;
@@ -397,6 +403,11 @@ nav span {
   left: 49%;
   position: absolute;
   top: 1rem;
+}
+@media (max-width: 650px) {
+  .main-content-container .directory {
+    left: 45%;
+  }
 }
 .main-content-container h2 {
   color: #162b32;
@@ -498,6 +509,7 @@ nav span {
 @media (max-width: 650px) {
   .intro:before {
     width: 20%;
+    left: 10%;
   }
 }
 .intro:after {
@@ -513,6 +525,7 @@ nav span {
 @media (max-width: 650px) {
   .intro:after {
     width: 20%;
+    right: 10%;
   }
 }
 .directory:before {
@@ -528,6 +541,7 @@ nav span {
 @media (max-width: 650px) {
   .directory:before {
     width: 20%;
+    left: 10%;
   }
 }
 .directory:after {
@@ -543,5 +557,6 @@ nav span {
 @media (max-width: 650px) {
   .directory:after {
     width: 20%;
+    right: 10%;
   }
 }
