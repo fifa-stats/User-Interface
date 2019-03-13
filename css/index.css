@@ -428,6 +428,7 @@ nav span {
 .main-content-container .directory-boxes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media (max-width: 650px) {
   .main-content-container .directory-boxes {
