@@ -13,7 +13,7 @@
         .dropdown{
             cursor: pointer;
             position: relative;
-            margin-bottom: 2rem;
+            
             // display: inline-block;
         
             .dropdown-content{
@@ -61,7 +61,7 @@
         }
     }
 
-    .intro{
+    .intro {
         margin-bottom: 5rem;
         padding-top: 7rem;
         position: relative;
@@ -79,6 +79,10 @@
             position: absolute;
             // text-align: center;
             top: 1rem;
+
+            @media @mobile{
+                left: 45%;
+            }
         }
 
         h2{
@@ -183,6 +187,7 @@
             font-size: 3rem;
             font-weight: bold;
             cursor: pointer;
+            margin-right: 7rem;
             }
 
             .about-us-btn{
@@ -231,7 +236,11 @@
    
     position: absolute;
     top: 2.75rem;
-    width: 40%;
+    width: 30%;
+
+    @media @mobile{
+        width: 20%;
+    }
 }
 
 .intro:after{
@@ -242,7 +251,11 @@
     height: 1rem;
     position: absolute;
     top: 2.75rem;
-    width: 40%;
+    width: 30%;
+
+    @media @mobile{
+        width: 20%;
+    }
 }
 
 .directory:before{
@@ -253,7 +266,11 @@
     height: 1rem;
     position: absolute;
     top: 2.75rem;
-    width: 40%;
+    width: 30%;
+
+    @media @mobile{
+        width: 20%;
+    }
 }
 
 .directory:after{
@@ -264,5 +281,9 @@
     height: 1rem;
     position: absolute;
     top: 2.75rem;
-    width: 40%;
+    width: 30%;
+
+    @media @mobile{
+        width: 20%;
+    }
 }

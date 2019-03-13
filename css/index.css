@@ -164,6 +164,25 @@ strong {
   max-width: 100%;
   margin: 0 auto;
 }
+.mobile-nav-bar {
+  display: none;
+}
+@media (max-width: 650px) {
+  .mobile-nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c2c7cd;
+  }
+  .mobile-nav-bar a {
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #162b32;
+    border-bottom: 1px solid #162b32;
+  }
+}
 .header-container {
   background-image: url(../img/header-img.jpeg);
   background-attachment: fixed;
@@ -187,6 +206,12 @@ strong {
   height: 41rem;
   padding: 2rem;
   padding-bottom: 0;
+}
+@media (max-width: 650px) {
+  .header-container .cta-container {
+    width: 100%;
+    height: 60%;
+  }
 }
 .header-container .cta-container h1 {
   font-size: 4.8rem;
@@ -227,7 +252,11 @@ nav {
   align-items: center;
   cursor: pointer;
   z-index: 1;
-  padding-bottom: 2rem;
+}
+@media (max-width: 650px) {
+  nav {
+    display: none;
+  }
 }
 nav .dropdown {
   cursor: pointer;
@@ -238,7 +267,7 @@ nav .dropdown .dropdown-content {
   background-color: white;
   z-index: 1;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 15rem;
 }
@@ -283,7 +312,6 @@ nav span {
 .main-content-container nav .dropdown {
   cursor: pointer;
   position: relative;
-  margin-bottom: 2rem;
 }
 .main-content-container nav .dropdown .dropdown-content {
   display: none;
@@ -337,6 +365,11 @@ nav span {
   left: 49%;
   position: absolute;
   top: 1rem;
+}
+@media (max-width: 650px) {
+  .main-content-container .intro .fa-futbol {
+    left: 45%;
+  }
 }
 .main-content-container .intro h2 {
   color: #162b32;
@@ -424,6 +457,7 @@ nav span {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+  margin-right: 7rem;
 }
 .main-content-container .bottom-content .about-us-btn {
   padding: 1rem 3rem;
@@ -459,7 +493,12 @@ nav span {
   height: 1rem;
   position: absolute;
   top: 2.75rem;
-  width: 40%;
+  width: 30%;
+}
+@media (max-width: 650px) {
+  .intro:before {
+    width: 20%;
+  }
 }
 .intro:after {
   right: 3rem;
@@ -469,7 +508,12 @@ nav span {
   height: 1rem;
   position: absolute;
   top: 2.75rem;
-  width: 40%;
+  width: 30%;
+}
+@media (max-width: 650px) {
+  .intro:after {
+    width: 20%;
+  }
 }
 .directory:before {
   left: 3rem;
@@ -479,7 +523,12 @@ nav span {
   height: 1rem;
   position: absolute;
   top: 2.75rem;
-  width: 40%;
+  width: 30%;
+}
+@media (max-width: 650px) {
+  .directory:before {
+    width: 20%;
+  }
 }
 .directory:after {
   right: 3rem;
@@ -489,5 +538,10 @@ nav span {
   height: 1rem;
   position: absolute;
   top: 2.75rem;
-  width: 40%;
+  width: 30%;
+}
+@media (max-width: 650px) {
+  .directory:after {
+    width: 20%;
+  }
 }
