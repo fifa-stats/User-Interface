@@ -184,6 +184,7 @@
         .bottom-content{
             background-image: url(../img/header-img.jpeg);
             background-size: cover;
+            background-attachment: fixed;
             background-position: center;
             width: 100%;
             height: 40rem;
@@ -193,11 +194,16 @@
             align-items: center;
             margin-bottom: 10rem;
 
+            @media @mobile{
+                background-position: left;
+                width: 93%;
+            }
+
             .bottom-cta-container{
                 @media @mobile{
                     background: rgba(53, 57, 58, 0.81);
                     width: 100%;
-                    height: 50%;
+                    padding: 5%;
                 }
             }
 
@@ -267,6 +273,10 @@
             margin: 0 auto;
             margin-bottom: 30rem;
 
+            @media @mobile{
+                width: 100%;
+            }
+
             .footer-content{
                 width: 100%;
                 display: flex;
@@ -280,7 +290,15 @@
                     width: 30%;
                    color: @main-color;
                    text-align: center;
-                   border-right: 1px solid @main-color;
+
+                   @media @mobile{
+                       width: 25%;
+                       font-size: 2.5rem;
+                   }
+                }
+
+                .gets-border{
+                    border-right: 1px solid @main-color;
                 }
             }
         }
