@@ -474,9 +474,21 @@ nav span {
   align-items: center;
   margin-bottom: 10rem;
 }
+@media (max-width: 650px) {
+  .main-content-container .bottom-content .bottom-cta-container {
+    background: rgba(53, 57, 58, 0.81);
+    width: 100%;
+    height: 50%;
+  }
+}
 .main-content-container .bottom-content h2 {
   color: #c2c7cd;
   margin-bottom: 1rem;
+}
+@media (max-width: 650px) {
+  .main-content-container .bottom-content h2 {
+    text-align: center;
+  }
 }
 .main-content-container .bottom-content h2 .bold {
   font-weight: bold;
@@ -485,7 +497,17 @@ nav span {
   color: #c2c7cd;
   font-size: 2.8rem;
 }
-.main-content-container .bottom-content .cta-btn {
+@media (max-width: 650px) {
+  .main-content-container .bottom-content p {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .main-content-container .bottom-content .btns-container {
+    text-align: center;
+  }
+}
+.main-content-container .bottom-content .btns-container .cta-btn {
   background-color: #162b32;
   color: #c2c7cd;
   margin-top: 1rem;
@@ -496,13 +518,20 @@ nav span {
   cursor: pointer;
   margin-right: 7rem;
 }
-.main-content-container .bottom-content .about-us-btn {
+@media (max-width: 650px) {
+  .main-content-container .bottom-content .btns-container .cta-btn {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+.main-content-container .bottom-content .btns-container .about-us-btn {
   padding: 1rem 3rem;
   font-size: 3rem;
   background-color: transparent;
   color: #162b32;
   font-weight: bold;
   border: 1px solid white;
+  color: #c2c7cd;
   cursor: pointer;
 }
 .main-content-container footer {
