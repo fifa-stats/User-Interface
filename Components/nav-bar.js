@@ -37,13 +37,7 @@ class NavBar{
 
 // Fetch the nav bar and turn it into a component
 
-setTimeout(makeNavbarComponent(), 3000);
-
-console.log("Hello");
-
-function makeNavbarComponent(){
     let navBars = document.querySelectorAll(".dropdown").forEach(navBar => new NavBar(navBar));
-}
 
 
 // Fetch the buttons and turn them into components
