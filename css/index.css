@@ -241,12 +241,10 @@ strong {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
 }
 .header-container .cta-container .cta-btn:hover {
   background-color: #162b32;
   color: #c2c7cd;
-  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
 }
 nav {
   position: fixed;
@@ -268,13 +266,13 @@ nav .dropdown {
   position: relative;
 }
 nav .dropdown .dropdown-content {
-  display: none;
   background-color: white;
   z-index: 1;
   position: absolute;
   top: 3rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 15rem;
+  margin-top: 1rem;
 }
 nav .dropdown .dropdown-content a {
   font-size: 3rem;
@@ -289,8 +287,8 @@ nav .dropdown .dropdown-content a:hover {
   color: #c2c7cd;
   background-color: #162b32;
 }
-nav .dropdown:hover .dropdown-content {
-  display: block;
+nav .dropdown .hidden {
+  display: none;
 }
 nav .dropdown-content:hover .dropdown-content {
   display: block;
@@ -303,6 +301,37 @@ nav .fa-arrow-down {
 nav span {
   font-size: 2.8rem;
   color: #162b32;
+}
+footer {
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+  margin-top: 10rem;
+}
+@media (max-width: 650px) {
+  footer {
+    width: 100%;
+  }
+}
+footer .footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-link {
+  width: 30%;
+  color: #162b32;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  footer .footer-content .footer-link {
+    width: 25%;
+    font-size: 2.5rem;
+  }
+}
+footer .footer-content .gets-border {
+  border-right: 1px solid #162b32;
 }
 .main-content-container {
   margin-top: 5rem;
@@ -463,7 +492,6 @@ nav span {
 .main-content-container .directory-boxes .directory-content p {
   width: 50%;
   margin: 0 auto;
-  border-bottom: 0.1rem dashed #162b32;
   padding-bottom: 1.5rem;
   color: #162b32;
 }
@@ -549,37 +577,6 @@ nav span {
   border: 1px solid white;
   color: #c2c7cd;
   cursor: pointer;
-}
-.main-content-container footer {
-  width: 30%;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 20rem;
-  margin-top: 10rem;
-}
-@media (max-width: 650px) {
-  .main-content-container footer {
-    width: 100%;
-  }
-}
-.main-content-container footer .footer-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.main-content-container footer .footer-content .footer-link {
-  width: 30%;
-  color: #162b32;
-  text-align: center;
-}
-@media (max-width: 650px) {
-  .main-content-container footer .footer-content .footer-link {
-    width: 25%;
-    font-size: 2.5rem;
-  }
-}
-.main-content-container footer .footer-content .gets-border {
-  border-right: 1px solid #162b32;
 }
 .intro:before {
   left: 3rem;
