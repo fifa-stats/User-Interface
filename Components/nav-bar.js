@@ -2,6 +2,7 @@ class NavBar{
     constructor(navBar){
         this.navBar = navBar;
         console.log(this.navBar);
+        this.dropdown = this.navBar.querySelector(".dropdown");
         this.dropdownContent = this.navBar.querySelector(".dropdown-content");
         console.log(this.dropdownContent);
 

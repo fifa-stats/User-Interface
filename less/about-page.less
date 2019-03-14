@@ -41,6 +41,10 @@
                     background-color: @main-color;
                 }
             }
+
+            .hidden{
+                display: none;
+            }
         }
     
         .dropdown:hover .dropdown-content{
@@ -92,7 +96,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
 
-            @media @mobile{
+            @media @tablet{
                 flex-direction: column;
                 flex-wrap: nowrap;
             }
@@ -100,27 +104,36 @@
             .directory-content{
                 width: 49%;
                 text-align: center;
-                margin-top: 5rem;
+                margin-top: 10rem;
 
-                @media @mobile{
+                @media @tablet{
                     width: 100%;
                 }
                 img{
-                        width: 50%;
-                        height: 33.4rem;
-                        cursor: pointer;
+                    width: 75%;
+                    height: 75%;
+                    cursor: pointer;
 
-                        @media @mobile{
-                            width: 100%;
-                        }
+                    @media @laptop {
+                        width: 70%;
+                        height: 60%;
                     }
+                    
+                    @media @tablet {
+                        width: 70%;
+                    }
+                    @media @mobile{
+                        width: 100%;
+                    }
+                   
+                }
                 h3 {
                     margin-top: 3rem;
                     color: @main-color;
                 }
 
                 p{
-                    width: 50%;
+                    width: 75%;
                     margin: 0 auto;
                     
                     padding-bottom: 1.5rem;
@@ -154,42 +167,42 @@
             }     
         }
 
-        footer{
-            width: 30%;
-            justify-content: space-between;
-            margin: 0 auto;
-            margin-bottom: 20rem;
-            margin-top: 10rem;
+        // footer{
+        //     width: 30%;
+        //     justify-content: space-between;
+        //     margin: 0 auto;
+        //     margin-bottom: 20rem;
+        //     margin-top: 10rem;
 
-            @media @mobile{
-                width: 100%;
-            }
+        //     @media @mobile{
+        //         width: 100%;
+        //     }
 
-            .footer-content{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                // background-color: @accent-color;
-                // border-top: 1px solid @main-color;
-                // border-left: 1px solid @main-color;
-                // border-bottom: 1px solid @main-color;
+        //     .footer-content{
+        //         width: 100%;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         // background-color: @accent-color;
+        //         // border-top: 1px solid @main-color;
+        //         // border-left: 1px solid @main-color;
+        //         // border-bottom: 1px solid @main-color;
 
-                .footer-link{
-                    width: 30%;
-                   color: @main-color;
-                   text-align: center;
+        //         .footer-link{
+        //             width: 30%;
+        //            color: @main-color;
+        //            text-align: center;
 
-                   @media @mobile{
-                       width: 25%;
-                       font-size: 2.5rem;
-                   }
-                }
+        //            @media @mobile{
+        //                width: 25%;
+        //                font-size: 2.5rem;
+        //            }
+        //         }
 
-                .gets-border{
-                    border-right: 1px solid @main-color;
-                }
-            }
-        }
+        //         .gets-border{
+        //             border-right: 1px solid @main-color;
+        //         }
+        //     }
+        // }
     }
 
 .intro:before{
