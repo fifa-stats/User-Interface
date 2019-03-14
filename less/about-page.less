@@ -105,24 +105,30 @@
                 width: 49%;
                 text-align: center;
                 margin-top: 10rem;
-                height: 50%;
+                
+
+                @media @laptop{
+                    height: 50%;
+                }
 
                 @media @tablet{
                     width: 100%;
                 }
                 img{
-                    width: 50rem;
-                    height: 60%;
+                    width: auto;
+                    height: auto;
+                    max-width: 50rem;
+                    max-height: 50rem;
                     cursor: pointer;
 
-                    @media @laptop {
-                        width: 70%;
-                        height: 60%;
-                    }
+                    // @media @laptop {
+                    //     width: 70%;
+                    //     height: 60%;
+                    // }
                     
-                    @media @tablet {
-                        width: 70%;
-                    }
+                    // @media @tablet {
+                    //     width: 70%;
+                    // }
                     @media @mobile{
                         width: 100%;
                     }
