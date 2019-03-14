@@ -304,13 +304,13 @@ nav span {
   color: #162b32;
 }
 footer {
-  width: 30%;
+  width: 50%;
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20rem;
   margin-top: 10rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   footer {
     width: 100%;
   }
@@ -321,7 +321,7 @@ footer .footer-content {
   justify-content: space-between;
 }
 footer .footer-content .footer-link {
-  width: 30%;
+  width: 40%;
   color: #162b32;
   text-align: center;
 }
