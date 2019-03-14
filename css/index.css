@@ -309,7 +309,7 @@ footer {
   margin-bottom: 20rem;
   margin-top: 10rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   footer {
     width: 100%;
   }
@@ -424,11 +424,17 @@ footer .footer-content .gets-border {
     text-align: center;
   }
 }
+@media (max-width: 800px) {
+  .main-content-container .intro p {
+    width: 95%;
+    text-align: center;
+  }
+}
 .main-content-container .intro img {
   width: 50%;
   margin-top: 2rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .main-content-container .intro img {
     width: 100%;
   }
@@ -459,7 +465,7 @@ footer .footer-content .gets-border {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .main-content-container .directory-boxes {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -470,7 +476,7 @@ footer .footer-content .gets-border {
   text-align: center;
   margin-top: 5rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .main-content-container .directory-boxes .directory-content {
     width: 100%;
   }
@@ -479,6 +485,11 @@ footer .footer-content .gets-border {
   width: 50%;
   height: 33.4rem;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .main-content-container .directory-boxes .directory-content img {
+    width: 70%;
+  }
 }
 @media (max-width: 650px) {
   .main-content-container .directory-boxes .directory-content img {

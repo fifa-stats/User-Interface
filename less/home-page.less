@@ -102,13 +102,18 @@
                 width: 100%;
                 text-align: center;
             }
+
+            @media @tablet{
+                width: 95%;
+                text-align: center;
+            }
         }
 
         img{
             width: 50%;
             margin-top: 2rem; 
 
-            @media @mobile{
+            @media @tablet{
                 width: 100%;
             }
         }
@@ -143,7 +148,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
 
-            @media @mobile{
+            @media @tablet{
                 flex-direction: column;
                 flex-wrap: nowrap;
             }
@@ -153,17 +158,22 @@
                 text-align: center;
                 margin-top: 5rem;
 
-                @media @mobile{
+                @media @tablet{
                     width: 100%;
                 }
                 img{
                     width: 50%;
                     height: 33.4rem;
                     cursor: pointer;
-
+                    
+                    @media @tablet {
+                        width: 70%;
+                    }
                     @media @mobile{
                         width: 100%;
                     }
+
+                   
                 }
                 h3 {
                     margin-top: 3rem;
