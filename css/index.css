@@ -263,16 +263,23 @@ nav {
 }
 nav .dropdown {
   cursor: pointer;
+  background: #c2c7cd;
   position: relative;
+  right: 1rem;
+  padding: 10px 17px;
+  /* padding-right: 0; */
+  opacity: 0.81;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 nav .dropdown .dropdown-content {
   background-color: white;
   z-index: 1;
   position: absolute;
   top: 3rem;
+  right: -1.2rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 15rem;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 nav .dropdown .dropdown-content a {
   font-size: 3rem;
@@ -308,7 +315,7 @@ footer {
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 @media (max-width: 1500px) {
   footer {
