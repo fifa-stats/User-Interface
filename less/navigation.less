@@ -101,7 +101,7 @@ nav{
     }
     
     .dropdown{
-        cursor: pointer;
+    cursor: pointer;
     background: #c2c7cd;
     position: relative;
     right: 1rem;
@@ -142,7 +142,25 @@ nav{
         .hidden{
             display: none;
         }
+    
+
     }
+
+    .dropdown:hover{
+        background: @main-color;
+        transition: all .5s;
+    }
+
+    .dropdown:hover .fa-arrow-down{
+        color: @accent-color;
+        transition: all .5s;
+    }
+
+    .dropdown:hover .nav-text{
+        color: @accent-color;
+        transition: all .5s;
+    }
+
 
     // .dropdown:hover .dropdown-content{
     //     display: block;

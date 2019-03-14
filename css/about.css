@@ -298,6 +298,18 @@ nav .dropdown .dropdown-content a:hover {
 nav .dropdown .hidden {
   display: none;
 }
+nav .dropdown:hover {
+  background: #162b32;
+  transition: all 0.5s;
+}
+nav .dropdown:hover .fa-arrow-down {
+  color: #c2c7cd;
+  transition: all 0.5s;
+}
+nav .dropdown:hover .nav-text {
+  color: #c2c7cd;
+  transition: all 0.5s;
+}
 nav .dropdown-content:hover .dropdown-content {
   display: block;
 }
@@ -445,8 +457,8 @@ footer .footer-content .gets-border {
   }
 }
 .main-content-container .directory-boxes .directory-content img {
-  width: 75%;
-  height: 75%;
+  width: 50rem;
+  height: 60%;
   cursor: pointer;
 }
 @media (max-width: 1500px) {
@@ -483,7 +495,7 @@ footer .footer-content .gets-border {
 .main-content-container .directory-boxes .directory-content .socials {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   border-bottom: 0.1rem dashed #162b32;
   border-top: 0.1rem dashed #162b32;
