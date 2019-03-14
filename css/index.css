@@ -286,6 +286,7 @@ nav .dropdown .dropdown-content a {
 nav .dropdown .dropdown-content a:hover {
   color: #c2c7cd;
   background-color: #162b32;
+  transition: all 0.5s;
 }
 nav .dropdown .hidden {
   display: none;
