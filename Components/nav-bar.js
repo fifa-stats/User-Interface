@@ -1,9 +1,7 @@
 class NavBar{
     constructor(navBar){
         this.navBar = navBar;
-        console.log(this.navBar);
-        this.dropdown = this.navBar.querySelector(".dropdown");
-        console.log(this.dropdown);
+        console.log(navBar);
         this.dropdownContent = this.navBar.querySelector(".dropdown-content");
         console.log(this.dropdownContent);
         this.navContent = this.navBar.querySelectorAll("span");
@@ -19,28 +17,37 @@ class NavBar{
     }
 }
 
-class Button {
-    constructor(button){
-        this.button = button;
-        // this.button.style.transition = "background .5s";
-        console.log(this.button);
-        this.button.addEventListener('mouseenter', () => this.brighten());
-        this.button.addEventListener('mouseleave', () => this.darken());
-    }
+// class Button {
+//     constructor(button){
+//         this.button = button;
+//         // this.button.style.transition = "background .5s";
+//         console.log(this.button);
+//         this.button.addEventListener('mouseenter', () => this.brighten());
+//         this.button.addEventListener('mouseleave', () => this.darken());
+//     }
 
-    brighten(){
-        this.button.style.filter = "brightness(150%)";
-    }
+//     brighten(){
+//         this.button.style.filter = "brightness(150%)";
+//     }
 
-    darken(){
-        this.button.style.filter ="brightness(100%)";
-    }
+//     darken(){
+//         this.button.style.filter ="brightness(100%)";
+//     }
+// }
+
+// Fetch the nav bar and turn it into a component
+
+setTimeout(makeNavbarComponent(), 3000);
+
+console.log("Hello");
+
+function makeNavbarComponent(){
+    let navBars = document.querySelectorAll(".dropdown").forEach(navBar => new NavBar(navBar));
 }
 
-let navBars = document.querySelectorAll(".dropdown");
-console.log(navBars);
-navBars.forEach(navBar => new NavBar(navBar));
 
-let buttons = document.querySelectorAll("button");
-buttons.forEach(button => button.style.transition ="filter .4s");
-buttons.forEach(button => new Button(button));
+// Fetch the buttons and turn them into components
+
+// let buttons = document.querySelectorAll("button");
+// buttons.forEach(button => button.style.transition ="filter .4s");
+// buttons.forEach(button => new Button(button));
