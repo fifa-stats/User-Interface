@@ -241,10 +241,12 @@ strong {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
 }
 .header-container .cta-container .cta-btn:hover {
   background-color: #162b32;
   color: #c2c7cd;
+  box-shadow: 0px 0.2rem 1.6rem 0.7rem;
 }
 nav {
   position: fixed;
@@ -266,13 +268,13 @@ nav .dropdown {
   position: relative;
 }
 nav .dropdown .dropdown-content {
+  display: none;
   background-color: white;
   z-index: 1;
   position: absolute;
   top: 3rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 15rem;
-  margin-top: 1rem;
 }
 nav .dropdown .dropdown-content a {
   font-size: 3rem;
@@ -287,8 +289,8 @@ nav .dropdown .dropdown-content a:hover {
   color: #c2c7cd;
   background-color: #162b32;
 }
-nav .dropdown .hidden {
-  display: none;
+nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 nav .dropdown-content:hover .dropdown-content {
   display: block;
@@ -301,37 +303,6 @@ nav .fa-arrow-down {
 nav span {
   font-size: 2.8rem;
   color: #162b32;
-}
-footer {
-  width: 30%;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 20rem;
-  margin-top: 10rem;
-}
-@media (max-width: 650px) {
-  footer {
-    width: 100%;
-  }
-}
-footer .footer-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer-content .footer-link {
-  width: 30%;
-  color: #162b32;
-  text-align: center;
-}
-@media (max-width: 650px) {
-  footer .footer-content .footer-link {
-    width: 25%;
-    font-size: 2.5rem;
-  }
-}
-footer .footer-content .gets-border {
-  border-right: 1px solid #162b32;
 }
 .main-content-container {
   margin-top: 5rem;
@@ -385,53 +356,6 @@ footer .footer-content .gets-border {
 .main-content-container nav span {
   font-size: 2.8rem;
   color: #162b32;
-}
-.main-content-container .intro {
-  margin-bottom: 5rem;
-  padding-top: 7rem;
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main-content-container .intro .fa-futbol {
-  color: #162b32;
-  left: 49%;
-  position: absolute;
-  top: 1rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .intro .fa-futbol {
-    left: 44.5%;
-  }
-}
-.main-content-container .intro h2 {
-  color: #162b32;
-  font-size: 4rem;
-  margin-top: 3rem;
-}
-.main-content-container .intro p {
-  color: #162b32;
-  width: 50%;
-  font-size: 3.2rem;
-  margin-top: 1rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .intro p {
-    width: 100%;
-    text-align: center;
-  }
-}
-.main-content-container .intro img {
-  width: 50%;
-  margin-top: 2rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .intro img {
-    width: 100%;
-  }
 }
 .main-content-container .directory {
   padding-top: 7rem;
@@ -500,83 +424,56 @@ footer .footer-content .gets-border {
     width: 100%;
   }
 }
-.main-content-container .bottom-content {
-  background-image: url(../img/header-img.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 40rem;
+.main-content-container .directory-boxes .directory-content .socials {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 0.1rem dashed #162b32;
+  border-top: 0.1rem dashed #162b32;
+  padding: 0.5rem 0;
 }
 @media (max-width: 650px) {
-  .main-content-container .bottom-content {
-    background-position: left;
-    width: 93%;
-  }
-}
-@media (max-width: 650px) {
-  .main-content-container .bottom-content .bottom-cta-container {
-    background: rgba(53, 57, 58, 0.81);
+  .main-content-container .directory-boxes .directory-content .socials {
     width: 100%;
-    padding: 5%;
   }
 }
-.main-content-container .bottom-content h2 {
-  color: #c2c7cd;
-  margin-bottom: 1rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .bottom-content h2 {
-    text-align: center;
-  }
-}
-.main-content-container .bottom-content h2 .bold {
-  font-weight: bold;
-}
-.main-content-container .bottom-content p {
-  color: #c2c7cd;
-  font-size: 2.8rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .bottom-content p {
-    text-align: center;
-  }
-}
-@media (max-width: 650px) {
-  .main-content-container .bottom-content .btns-container {
-    text-align: center;
-  }
-}
-.main-content-container .bottom-content .btns-container .cta-btn {
-  background-color: #162b32;
-  color: #c2c7cd;
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-  border: none;
-  font-size: 3rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 7rem;
-}
-@media (max-width: 650px) {
-  .main-content-container .bottom-content .btns-container .cta-btn {
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-  }
-}
-.main-content-container .bottom-content .btns-container .about-us-btn {
-  padding: 1rem 3rem;
-  font-size: 3rem;
-  background-color: transparent;
+.main-content-container .directory-boxes .directory-content .socials a {
   color: #162b32;
-  font-weight: bold;
-  border: 1px solid white;
+}
+.main-content-container .directory-boxes .directory-content .socials a:hover {
   color: #c2c7cd;
-  cursor: pointer;
+}
+.main-content-container footer {
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+  margin-top: 10rem;
+}
+@media (max-width: 650px) {
+  .main-content-container footer {
+    width: 100%;
+  }
+}
+.main-content-container footer .footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-container footer .footer-content .footer-link {
+  width: 30%;
+  color: #162b32;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .main-content-container footer .footer-content .footer-link {
+    width: 25%;
+    font-size: 2.5rem;
+  }
+}
+.main-content-container footer .footer-content .gets-border {
+  border-right: 1px solid #162b32;
 }
 .intro:before {
   left: 3rem;
