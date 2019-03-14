@@ -3,14 +3,19 @@ class NavBar{
         this.navBar = navBar;
         console.log(this.navBar);
         this.dropdown = this.navBar.querySelector(".dropdown");
+        console.log(this.dropdown);
         this.dropdownContent = this.navBar.querySelector(".dropdown-content");
         console.log(this.dropdownContent);
+        this.navContent = this.navBar.querySelectorAll("span");
+        console.log(this.navContent);
 
         this.navBar.addEventListener('click', () => this.toggleDropdown());
     }
 
     toggleDropdown(){
         this.dropdownContent.classList.toggle("hidden");
+        this.navBar.classList.toggle("dropdown-invert");
+        this.navContent.forEach(element => element.classList.toggle("nav-content-invert"));
     }
 }
 
