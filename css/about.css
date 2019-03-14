@@ -272,7 +272,6 @@ nav .dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 nav .dropdown .dropdown-content {
-  background-color: white;
   z-index: 1;
   position: absolute;
   top: 3rem;
@@ -298,16 +297,12 @@ nav .dropdown .dropdown-content a:hover {
 nav .dropdown .hidden {
   display: none;
 }
-nav .dropdown:hover {
+nav .dropdown .nav-content-invert {
+  color: #c2c7cd;
+  transition: all 0.5s;
+}
+nav .dropdown-invert {
   background: #162b32;
-  transition: all 0.5s;
-}
-nav .dropdown:hover .fa-arrow-down {
-  color: #c2c7cd;
-  transition: all 0.5s;
-}
-nav .dropdown:hover .nav-text {
-  color: #c2c7cd;
   transition: all 0.5s;
 }
 nav .dropdown-content:hover .dropdown-content {
