@@ -440,11 +440,7 @@ footer .footer-content .gets-border {
   width: 49%;
   text-align: center;
   margin-top: 10rem;
-}
-@media (max-width: 1500px) {
-  .main-content-container .directory-boxes .directory-content {
-    height: 50%;
-  }
+  height: 50%;
 }
 @media (max-width: 1000px) {
   .main-content-container .directory-boxes .directory-content {
