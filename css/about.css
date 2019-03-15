@@ -232,6 +232,9 @@ strong {
   color: #c2c7cd;
   line-height: 5rem;
 }
+.header-container .cta-container a {
+  text-align: center;
+}
 .header-container .cta-container .cta-btn {
   align-self: center;
   background-color: #c2c7cd;
@@ -500,6 +503,16 @@ footer .footer-content .gets-border {
 }
 .main-content-container .directory-boxes .directory-content .socials a:hover {
   color: #c2c7cd;
+}
+@media (max-width: 1500px) {
+  .main-content-container .directory-boxes .directory-content .last-profile {
+    width: 110%;
+  }
+}
+@media (max-width: 650px) {
+  .main-content-container .directory-boxes .directory-content .last-profile {
+    width: 100%;
+  }
 }
 .intro:before {
   left: 3rem;
