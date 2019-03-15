@@ -490,6 +490,8 @@ footer .footer-content .gets-border {
 @media (max-width: 650px) {
   .main-content-container .directory-boxes .directory-content .socials {
     width: 100%;
+    flex-direction: column;
+    height: 15rem;
   }
 }
 .main-content-container .directory-boxes .directory-content .socials a {
